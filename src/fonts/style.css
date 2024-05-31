@@ -1,0 +1,6 @@
+@import url('./gilroy/style.css');
+@import url('./helvetica-neue/style.css');
+
+.font-regular {
+  font-weight: 400;
+}

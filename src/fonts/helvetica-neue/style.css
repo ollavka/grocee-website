@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./HelveticaNeue-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./HelveticaNeue-Roman.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./HelveticaNeue-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./HelveticaNeueBold.ttf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+.helvetica-xs {
+  @apply font-helvetica text-[24px] leading-[133%] transition-[font-size];
+}
+
+.helvetica-sm {
+  @apply font-helvetica text-[32px] leading-[125%] transition-[font-size];
+}
+
+.helvetica-md {
+  @apply font-helvetica text-[36px] leading-[122%] tracking-tightest transition-[font-size];
+}
+
+.helvetica-lg {
+  @apply font-helvetica text-[48px] leading-[125%] tracking-tightest transition-[font-size];
+}
+
+.helvetica-xl {
+  @apply font-helvetica text-[60px] leading-[120%] tracking-tightest transition-[font-size];
+}
+
+.helvetica-2xl {
+  @apply font-helvetica text-[72px] leading-[125%] tracking-tightest transition-[font-size];
+}
+
+.helvetica {
+  @apply font-helvetica text-[24px] leading-[133%] transition-[font-size] tablet:text-[32px] tablet:leading-[125%] laptop:text-[36px] laptop:leading-[122%] laptop:tracking-tightest;
+}
