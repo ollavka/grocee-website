@@ -62,7 +62,6 @@
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.13",
     "tailwindcss": "^3.4.3",
-    "typescript": "^5.4.3",
-    "@next/swc-win32-x64-msvc": "^15.0.0-rc.0"
+    "typescript": "^5.4.3"
   }
 }
