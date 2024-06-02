@@ -4,7 +4,7 @@ import { sendHelpMail } from '@/actions'
 import { useGlobalTypography } from '@/store'
 import { useFormState, useFormStatus } from 'react-dom'
 import { Button, Input } from 'ui'
-import { ChangeEvent, ReactNode, useCallback, useEffect, useRef, useState } from 'react'
+import { ChangeEvent, ReactNode, useCallback, useEffect, useState } from 'react'
 import toast from 'react-hot-toast'
 
 const SubmitButton = ({ children }: { children: ReactNode }) => {

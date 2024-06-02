@@ -52,8 +52,10 @@ export default async function Page({ params }: NextRoute) {
 
         {(page?.layout?.length ?? 0) > 0 && (
           <div
-            className={clsx('mx-auto mt-8 flex flex-col gap-16 laptop:mt-10 laptop:gap-20', {
-              'max-w-[900px]': page?.layoutHasWidthLimit,
+            className={clsx('mt-8 flex flex-col gap-16 laptop:mt-10 laptop:gap-20', {
+              'mx-auto box-content max-w-[900px] px-4 tablet:px-5 laptop:px-12 desktop:px-[100px]':
+                page?.layoutHasWidthLimit,
+              'width-limit': !page.layoutHasWidthLimit,
             })}
           >
             {renderBlocks(page.layout)}

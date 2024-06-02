@@ -13,6 +13,9 @@ export const sendHelpMail = async (prevState: any, formData: FormData) => {
     support.links?.find(({ type }) => type === 'email')?.info || process.env.EMAIL
 
   const transporter = nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: 587,
+    secure: true,
     service: 'gmail',
     auth: {
       user: emailAddress,

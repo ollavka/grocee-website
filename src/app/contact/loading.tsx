@@ -8,10 +8,14 @@ type Props = {
 
 export default function Loading({ isClient = false }: Props) {
   return (
-    <div className={clsx({ 'mt-[120px] tablet:mt-[150px]': !isClient })}>
+    <div className={clsx('mb-[200px]', { 'mt-[120px] tablet:mt-[150px]': !isClient })}>
       <BreadcrumbsSkeleton disableWithLimit={isClient} />
 
-      <div className='grid-layout mt-8 !gap-8'>
+      <div
+        className={clsx('grid-layout mt-8 !gap-8', {
+          'width-limit': !isClient,
+        })}
+      >
         <div className='col-span-full flex flex-col gap-8 laptop:col-span-4'>
           <Skeleton width={200} height={40} borderRadius={8} />
           <div className='flex flex-col gap-6'>
